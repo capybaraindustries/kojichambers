@@ -14,11 +14,12 @@
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="container">
-    <h1 id="koji-chamber" style="text-align: center">Building a Koji Chamber</h1>
+<body class="red lighten-5">
+  <div class="container" style="max-width: 680px;">
+    <h1 id="koji-chamber" class='center-align'>Building a Koji Chamber</h1>
 
     <p>
     At the end of 2018 I picked up a copy of the <a href="https://amzn.to/2TndE2E">NOMA Fermentation Guide</a>
@@ -31,12 +32,12 @@
     to some person at Lagunitas. It took some time before I finally settled in, and
     re-sourced a new chamber. After DM’ing multiple people on reddit with the part
     list, I figured I should make a website with the list and various nuances.
-    Disclaimer: For some parts I’m using an amazon affiliate link. If you’re trying
+    Disclaimer: For most parts I’m using an Amazon affiliate link. If you’re trying
     to reduce cost, there are more than likely cheaper options out there but keep in
     mind the criteria for why something was picked.
     </p>
 
-    <h3 id="sheet-pan-rack">Sheet Pan Rack</h3>
+    <h4 id="sheet-pan-rack">Sheet Pan Rack</h4>
 
     <p>
     First thing first, you need a container! I personally use a tray rack. It feels
@@ -50,7 +51,7 @@
         sized tray</a>.
     </p>
 
-    <h3 id="cooler">Cooler</h3>
+    <h4 id="cooler">Cooler</h4>
     <p>
     A cooler is a great starting point as they’re relatively cheap. The main caveat
     is you need to keep the lid slightly open most of the time to let fresh air in.
@@ -58,7 +59,7 @@
     local walmart I imagine there’s even cheaper coolers to be had.
     Link to <a href="https://amzn.to/36fnb0V">Coleman cooler</a>.
     </p>
-    <h3 id="perforated-tray">Perforated Tray</h3>
+    <h4 id="perforated-tray">Perforated Tray</h4>
 
     <p>
     The perforation allows the <em>Aspergillus Oryzae</em> to breath. The hotel
@@ -71,7 +72,7 @@
     </p>
 
     <p>
-    <strong>N.B.</strong> Sheet pans and hotel pans use fundamentally different
+    <strong>N.B.:</strong> Sheet pans and hotel pans use fundamentally different
     sizing! A half sized hotel pan <strong>will not</strong> be able to use the
     rails in a sheet pan rack, as it&#39;s not wide enough. A full sized hotel pan
     will be too big. For some reason hotel pan racks are considerably more
@@ -79,7 +80,7 @@
     the rails so the hotel pans can sit on them.
     </p>
 
-    <h3 id="temperature-and-humidity-controller">Temperature and Humidity Controller</h3>
+    <h4 id="temperature-and-humidity-controller">Temperature and Humidity Controller</h4>
     <p>
     Because <em>Aspergillus Oryzae</em> needs to be incubated at approximately 30
     degrees Celsius and at 80% humidity, you’re going to need some temperature
@@ -88,13 +89,13 @@
     controllers, meaning there will be some temperature error. It’ll let the
     temperature drop to, say, 29.5 degree before turning the heating element on,
     and then wait until the temperature is at 30 degrees before turning it off.
-    Real tuned PID controllers can keep the temperature at a consistent 30 degrees
+    Real, tuned PID controllers can keep the temperature at a consistent 30 degrees
     by constantly making micro adjustments. If you want, you can get nerdy and
     build one using an Arduino and buying the relevant sensors. Link to
     <a href="https://amzn.to/2XfHuHo">Inkbird Humidity and Temperature controller</a>.
     </p>
 
-    <h3 id="heating-element">Heating Element</h3>
+    <h4 id="heating-element">Heating Element</h4>
     <p>
     Per above, you’re going to need a heating element. The size of the chamber
     should dictate the wattage of heater you buy. I personally use a half sized
@@ -103,13 +104,15 @@
     turn on when your temperature controller starts providing power to it again.
     Link to <a href="https://amzn.to/3g9UQho">500 watt space heater</a>.</p>
 
-    <h3 id="humidifier">Humidifier</h3>
+    <h4 id="humidifier">Humidifier</h4>
     <p>
     Same idea goes for a humidifier. Physical switch is a must, and chamber size
     dictates the amount of water you need. This will keep my chamber at 80%
     humidity for the whole grow time without needing to be filled, which is really
-    nice. Link to
-    <a href="https://amzn.to/2z5oX93">humidifier w/ physicalswitch</a>.
+    nice.
+    Link to
+    <a href="https://amzn.to/2z5oX93">humidifier w/ physicalswitch</a>. For a cooler setup,
+    you could use a <a href="https://amzn.to/2LFxeTJ">heating mat</a> to save space.
     </p>
 
     <p>
@@ -118,6 +121,24 @@
     <a href="https://amzn.to/2WMfnkg">small USB powered stick</a> humidifiers
     in glass of water to get some space back. I haven’t
     tried it though so buyer beware.
+    </p>
+    <p><b>N.B.:</b> Humidity and moisture will tend to collect on the side of your chamber.
+    This will lead to incorrect humidity readings. To get more accurate readings, I
+    highly recommend taping the cable to the top of chamber so that the hygrometer dangles in midair,
+    as close to where your koji will be.
+    </p>
+    <h4> Putting it all together </h4>
+    <p>
+    Once you have all your pieces, set it up! It should be pretty intuitive,
+    make sure you keep your cord managed. If you're using a cooler, you can use
+    something like a few mason jar lids or cooling tray to keep the koji tray
+    off the floor.
+    </p>
+
+    <h4> Other Readings </h4>
+    <p>
+      Since I've never made a cooler based fermentation chamber, I'd strongly recommend
+      reading /u/nesevis's post on <a href="https://www.reddit.com/r/fermentation/comments/9z97cv/guide_fermentation_chamber_for_noma_style_garums/">making a cooler chamber</a>.
     </p>
   <footer style="text-align: center; margin-bottom: 10px">
     By <a href="https://capybaraindustries.com">Capybara Industries</a>.
