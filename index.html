@@ -54,11 +54,10 @@
     really versatile, especially since my girlfriend uses it when she bakes a lot
     of cookies. I can scale up the amount of koji being made at a time by just
     adding more trays. You’ll need to snag a vinyl cover and a tray for the bottom
-    of the rack to act as the floor. Here&#39;s the link for the <a
-        href="https://amzn.to/3bHWcw5">rack</a>, 
-      <ahref="https://amzn.to/2zUW4Mw">vinyl cover</a>, and <a
-        href="https://www.webstaurantstore.com/advance-tabco-18-8a-26-full-size-18-gauge-aluminum-sheet-pan-wire-in-rim-18-x-26/109188A26.html">full
-        sized tray</a>.
+    of the rack to act as the floor. Here&#39;s the link for the
+    <a href="https://amzn.to/3bHWcw5">rack</a>,
+    <a href="https://amzn.to/2zUW4Mw">vinyl cover</a>, and
+    <a href="https://www.webstaurantstore.com/advance-tabco-18-8a-26-full-size-18-gauge-aluminum-sheet-pan-wire-in-rim-18-x-26/109188A26.html">full sized tray</a>.
     </p>
 
     <h4 id="cooler">Cooler</h4>
@@ -98,10 +97,13 @@
     the price point. One thing to keep in mind though is that they are not true PID
     controllers, meaning there will be some temperature error. It’ll let the
     temperature drop to, say, 29.5 degree before turning the heating element on,
-    and then wait until the temperature is at 30 degrees before turning it off.
+    and then wait until the temperature is at 30 degrees before turning it off. However,
+    the temperature will keep rising since the heating element gives off residual heat
+    for a short period of time, so the peak temperature is something like 31.5 degrees.
     Real, tuned PID controllers can keep the temperature at a consistent 30 degrees
-    by constantly making micro adjustments. If you want, you can get nerdy and
-    build one using an Arduino and buying the relevant sensors. Link to
+    by having a model of the heating element's characteristics and constantly making
+    micro adjustments. If you're tech inclined, you can really nerd out building your own
+    controller using an Arduino with the relevant sensors. Link to
     <a href="https://amzn.to/2XfHuHo">Inkbird Humidity and Temperature controller</a>.
     </p>
 
@@ -135,7 +137,7 @@
     <p><b>N.B.:</b> Humidity and moisture will tend to collect on the side of your chamber.
     This will lead to incorrect humidity readings. To get more accurate readings, I
     highly recommend taping the cable to the top of chamber so that the hygrometer dangles in midair,
-    as close to where your koji will be.
+    close to where your koji will be.
     </p>
     <h4> Putting it all together </h4>
     <p>
